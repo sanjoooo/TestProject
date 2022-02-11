@@ -1,0 +1,15 @@
+.DottedBox{
+    margin:40px;
+    border:5px  dotted hotpink;
+}
+
+
+.DottedBox_content{
+    font-size: 30px;
+    text-align: center;
+}
+
+.Primary{
+    color: #8a2be2;
+
+}
