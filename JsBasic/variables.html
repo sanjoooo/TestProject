@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//global scope accessible inside outside the block
+//inside outside the block value is same
+var x=100;
+{
+    var x=400;
+    
+   document.write("x value inside block="+x)
+   document.write("<br>")
+
+
+}
+document.write("x value outside block="+x);
+document.write("<br>")
+
+
+//Let variables :local scope
+//value is different inside and outside the block
+let num=200;
+{
+   let num=40;
+    document.write("num value inside block="+num);
+    document.write("<br>")
+
+
+}
+document.write("num value outside block="+num);
+document.write("<br>")
+
+
+//const variable
+
+const a=100;
+    document.write(a)
+    document.write("<br>")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

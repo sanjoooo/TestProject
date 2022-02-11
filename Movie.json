@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "61f4ade1a80065fec1da8261"
+  },
+  "mid": "1",
+  "mname": "agnipath",
+  "tikit": "250"
+},{
+  "_id": {
+    "$oid": "61f4ae35a80065fec1da8262"
+  },
+  "mid": "2",
+  "mname": "zero",
+  "tikit": "200"
+},{
+  "_id": {
+    "$oid": "61f4aeb5a80065fec1da8264"
+  },
+  "mid": "3",
+  "mname": "kaliyug",
+  "tikit": "300"
+},{
+  "_id": {
+    "$oid": "61f4af4ea80065fec1da8265"
+  },
+  "mid": "4",
+  "mname": "dabangg",
+  "tikit": "200"
+},{
+  "_id": {
+    "$oid": "61f4af88a80065fec1da8266"
+  },
+  "mid": "4",
+  "mname": "zanjir",
+  "tikit": "250"
+}]

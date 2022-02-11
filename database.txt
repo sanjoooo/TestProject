@@ -1,0 +1,138 @@
+ db.createCollection("emp")
+{ "ok" : 1 }
+> db.emp.insert(eid:1,ename:"purvi patil",salery:300000)
+uncaught exception: SyntaxError: missing ) after argument list :
+@(shell):1:17
+> db.emp.insert({eid:1,ename:"purvi patil",salery:30000})
+WriteResult({ "nInserted" : 1 })
+> db.emp.insertMany([{eid:2,ename:"nishant deshmukh",salery:40000},{eid:3,ename:"vrunda shinde",salery:50000}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("61f397f6acb48bb08b8a1734"),
+                ObjectId("61f397f6acb48bb08b8a1735")
+        ]
+}
+> db.emp.find()
+{ "_id" : ObjectId("61f39725acb48bb08b8a1733"), "eid" : 1, "ename" : "purvi patil", "salery" : 30000 }
+{ "_id" : ObjectId("61f397f6acb48bb08b8a1734"), "eid" : 2, "ename" : "nishant deshmukh", "salery" : 40000 }
+{ "_id" : ObjectId("61f397f6acb48bb08b8a1735"), "eid" : 3, "ename" : "vrunda shinde", "salery" : 50000 }
+> db.emp.find().pretty()
+{
+        "_id" : ObjectId("61f39725acb48bb08b8a1733"),
+        "eid" : 1,
+        "ename" : "purvi patil",
+        "salery" : 30000
+}
+{
+        "_id" : ObjectId("61f397f6acb48bb08b8a1734"),
+        "eid" : 2,
+        "ename" : "nishant deshmukh",
+        "salery" : 40000
+}
+{
+        "_id" : ObjectId("61f397f6acb48bb08b8a1735"),
+        "eid" : 3,
+        "ename" : "vrunda shinde",
+        "salery" : 50000
+}
+>db.emp.insert({eid:4,ename:"sakshi malik",salery:66000})
+WriteResult({ "nInserted" : 1 })
+
+> //update
+> db.emp.update({id:4},{$set:{ename:"priya malik"}})
+WriteResult({ "nMatched" : 0, "nUpserted" : 0, "nModified" : 0 })
+
+> //delete
+> db.emp.find()
+{ "_id" : ObjectId("61f39725acb48bb08b8a1733"), "eid" : 1, "ename" : "purvi patil", "salery" : 30000 }
+{ "_id" : ObjectId("61f397f6acb48bb08b8a1734"), "eid" : 2, "ename" : "nishant deshmukh", "salery" : 40000 }
+{ "_id" : ObjectId("61f397f6acb48bb08b8a1735"), "eid" : 3, "ename" : "vrunda shinde", "salery" : 50000 }
+{ "_id" : ObjectId("61f4a0415fd46271d9be243b"), "eid" : 4, "ename" : "sakshi malik", "salery" : 66000 }
+
+>
+> db.emp.deleteOne({eid:1})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> //read
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
