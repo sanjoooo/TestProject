@@ -2,19 +2,16 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class StudentService {
- 
   AddNewStudent(): string {
-    return 'Student Added Successfully!!';
+    return 'New student is successfully added';
   }
-
-  EditStudent(): string{
-      return 'Virat has been updated'
+  UpdateStudent(): string {
+    return 'Student record has been updated successfully!!';
   }
-
-  DeleteStudent(): string{
-      return 'Virat has been deleted'
+  DeleteStudent(): string {
+    return 'Student record has been deleted successfully!!';
   }
   GetAllStudents(): any {
-    return ['Virat Kohli', 'MS Dhoni', 'Shikhar Dhawan','Suresh Raina'];
+    return ['Vish', 'Kartiki', 'Anokhi'];
   }
 }
