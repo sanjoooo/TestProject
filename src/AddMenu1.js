@@ -3,13 +3,13 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
-function Login() {
+function AddMenu1() {
   const [userdata, setUser] = useState([]);
   const [userId, setUserId] = useState();
   const [password, setPassword] = useState();
   const [msg, setMsg] = useState("");
 
-  const getUdata = () => {
+  const addData = () => {
     axios.get("http://localhost:8181/user").then((response) => {
       console.log(response.data);
       setUser(response.data);
@@ -19,7 +19,7 @@ function Login() {
     });
   };
   useEffect(() => {
-    getUdata();
+    addData();
   }, []);
 
   const navigate = useNavigate();
@@ -29,21 +29,20 @@ function Login() {
       if (
         userId === item.userName &&
         password === item.password &&
-        item.adminfound === false
-      ) {
-        console.log("user login");
-        navigate("/menucard");
-      } else if (
-        userId === item.userName &&
-        password === item.password &&
         item.adminfound === true
       ) {
-        console.log("admin login");
-        navigate("/admin");
-      } else {
-        setMsg("Enter Valid Username or Password");
-      }
-    });
+        navigate("/menucard");
+    //   } else if (
+    //     userId === item.userName &&
+    //     password === item.password &&
+    //     item.adminfound === true
+    //   ) {
+    //     console.log("admin login");
+    //     navigate("/admin");
+    //   } else {
+    //     setMsg("Enter Valid Username or Password");
+    //   }
+    // });
   };
   return (
     <>
@@ -79,14 +78,15 @@ function Login() {
                 </button>
               </div>
             </form>
-            {/* <br></br>
+            <br></br>
             <div>
               <Link to="/">Register here</Link>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 }
-export default Login;
+
+export default AddMenu1;

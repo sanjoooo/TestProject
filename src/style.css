@@ -1,0 +1,47 @@
+ .Nav{
+    background: firebrick;
+}
+.MenuCard{
+    margin: 50px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main-card{
+   margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 500px));
+  grid-gap: 50px;
+  justify-content: space-around;
+}
+.title{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 60px;
+  margin: 10px 5px;
+}
+.description{
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 5px;
+}
+.category{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    margin: 10px 5px;
+}
+.order-btn{
+    background-color: firebrick;
+    color: white;
+    padding: 8px;
+
+}
+ .main-card{
+   margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 500px));
+  grid-gap: 50px;
+  justify-content: space-around;
+}

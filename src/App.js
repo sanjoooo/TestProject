@@ -1,29 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Admin from './Admin';
+import AddMenu from './AddMenu';
+import Signup from './Signup';
 import Login from './Login';
-import SignUpp from './SignUpp';
-import AddProduct from './AddProduct';
-import Login1 from './Login1';
-import UpdateProduct from './UpdateProduct';
-import Home from './Home';
-import ListProduct from './ListProduct';
-import DeleteProduct from './DeleteProduct';
+
+import MenuCard from './MenuCard';
+import Signup2 from './Signup2';
+import Signup3 from './Signup3';
+import Routing from './Routing';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-  {/* <SignUpp/> */}
-  {/* <Login/> */}
+    <>
+  {/* <Signup3/> */}
+{/* <Signup2/> */}
+{/* <Signup3/> */}
+{/* <MenuCard/> */}
 
-  {/* <AddProduct/> */}
-  {/* <Login1/> */}
-   <UpdateProduct/> 
-   
-   {/* <ListProduct/> */}
-   {/* <DeleteProduct/> */}
-   {/* <Login/> */}
+   <Routing/>
+{/* <Users/> */}
+{/* <MenuCard1/> */}
 
-    </div>
+
+    </>
   );
 }
 
